@@ -1,64 +1,50 @@
+main {
+    padding: 150px 20px;
+  }
+  img {
+    max-width: 100%;
+  }
+  footer {
+    font-size: 10px;
+    margin: 5em auto;
+  }
+  a.entrance {
+    display: inline-block;
+    max-width: 300px;
+    margin: 0.5em;
+  }
+  a.entrance img {
+    transition: all 0.25s ease;
+  }
+  a.entrance:hover img {
+    scale: 1.05;
+  }
+
+.box-home {
+    max-width: 300px;
+    margin: 0.5em;
+}
+
 .container {
     padding: 2rem;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 10px;
 }
 
-.slider-wrapper {
-    position: relative;
-    max-width: 48rem;
-    margin: 0 auto;
-}
+.box {
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+  }
 
-.slider {
-    display: flex;
-    aspect-ratio: 4/5;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    box-shadow: 0 1.5 rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-    border-radius: 0.5rem;
-}
-
-.slider img {
-    flex: 1 0 100%;
-    scroll-snap-align: start;
-    object-fit: cover;
-}
-
-.slider-nav {
-    display: flex;
-    column-gap: 1rem;
-    position: absolute;
-    bottom: 1.25rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-.slider-nav a {
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
-}
-
-.slider-nav a:hover {
-    opacity: 1;
-}
-
-.slider-buttons {    
-    top: 105%;
-    left: 45%;
-    width: 60px;
-    height:auto;
-    color: white;
-    position: absolute;
-    z-index: 2;
-    background: grey; 
-    box-shadow: 0 1.5 rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-    padding: 0.5rem;
-    border: 1px solid #333333;
-    border-radius: 0.5rem;
-    opacity: 0.75;
+.block {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: 14px; 
+    color: #fff; 
+    background-color: #AAA8A8; 
+    text-align: center;
 }
