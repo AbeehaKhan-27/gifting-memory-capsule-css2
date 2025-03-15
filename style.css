@@ -1,13 +1,25 @@
-main {
+head {
+    font-size: 2em; 
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+  }
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0;
+  }
+  main {
     padding: 150px 20px;
   }
-    img {
-    max-width: 300px;
-  } 
+  img {
+    max-width: 100%;
+  }
   footer {
     font-size: 10px;
     margin: 5em auto;
   }
+
   /* a.entrance {
     display: inline-block;
     max-width: 300px;
@@ -36,7 +48,7 @@ main {
     display: grid; 
     grid-gap: 10px;
     grid-template-columns: repeat(3, 300px); 
-    grid-template-rows: repeat(3, 300px);
+    grid-template-rows: repeat(3, 320px);
     justify-content: center; 
 
 }
@@ -55,3 +67,10 @@ a.block {
     flex-flow: row no-wrap; 
     overflow: auto;
 }
+
+a.block img {
+    transition: all 0.25s ease;
+  }
+  a.block:hover img {
+    scale: 1.05;
+  }
