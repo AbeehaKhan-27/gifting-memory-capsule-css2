@@ -6,18 +6,57 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <style>
-      /* You can put any CSS styles here */
-      img {
-        max-width: 100%;
-      }
-    </style>
+        /* You can put any CSS styles here */
+        body {
+          margin: 0;
+        }
+  
+        .img-grid {
+          --gap: 10px;
+          --num-columns: 4;
+          --row-height: 500px;
+          
+          box-sizing: border-box;
+          padding: var(--gap);
+          
+          display: grid; 
+          grid-template-columns: repeat(var(--num-columns), 1fr); 
+          grid-auto-rows: var(--row-height);
+          gap: var(--gap);
+        }
+  
+        .img-grid > img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 5px;
+        }
+  
+        .img-grid-col-2 {
+          grid-column: span 2;
+        }
+  
+        .img-grid-row-2 {
+          grid-row: span 2;
+        }
+  
+        @media  screen and (max-width: 1024px) {
+          .img-grid {
+            --num-cols: 2;
+            --row-height: 200px;
+          }
+        }
+  
+      </style>
   </head>
   <body style="background-color:black;">
     <!-- You can put your HTML here -->
+    <div class="img-grid">
       <img src = "pictures-emaan/9B6C5B93-1E93-4B50-9567-E79EF7F6412D.jpg" alt = "emaan laughing"/>
-      <img src="pictures-emaan/048447DD-9766-4152-B28E-C86622BD753E.JPG" alt="emaan and i" width="240" height="300" align="left"/>
+      <img class="img-grid-col-2 img-grid-row-2" src="pictures-emaan/IMG_2601.jpg" alt="emaan and i" width="240" height="300" align="left"/>
       <img src="pictures-emaan/85154252-05F3-41CA-A6FA-6B1C709F3C3C.JPG" alt="emaan, sanam and i" width="250" height="300" align="middle"/>
       <img src = "pictures-emaan/F0FBBA99-DE0B-4679-A07D-F14F67CB933A.JPG" alt = "emaan, sanam and i" width="250" height="300" align="right"/>
-      <img src = "pictures-emaan/IMG_2601.jpg" alt = "emaan in green kurta" width="250" height="300" align="left"/>
+      <img src = "pictures-emaan/048447DD-9766-4152-B28E-C86622BD753E.JPG" alt = "emaan in green kurta" width="250" height="300" align="left"/>
+    </div>
   </body>
 </html>
