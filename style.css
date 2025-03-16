@@ -1,11 +1,17 @@
 head {
     font-size: 2em; 
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'American Typewriter', serif;;
     text-align: center;
   }
+  h1 {
+    font-size: 3em; 
+    font-family: 'Chalkduster', fantasy;
+    text-align: center; 
+  }
   body {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 18px;
+    font-family: 'Chalkduster', fantasy;
+    line-height: 0.75;
     text-align: center;
     margin: 0;
   }
@@ -20,17 +26,33 @@ head {
     margin: 5em auto;
   }
   
+  video {
+    width: 100%;
+    background-color: black;
+  }
   
 .blocks {
     display: grid; 
     grid-gap: 10px;
-    grid-template-columns: repeat(3, 300px); 
+    grid-template-columns: repeat(5, 300px); 
     grid-template-rows: repeat(3, 320px);
     justify-content: center; 
 }
 
 .blocks > a {
     border: 1px dotted black;
+}
+
+.blocks > img.block {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  font-size: 14px; 
+  color: #fff; 
+  text-align: center;
+  flex-flow: row no-wrap; 
+  overflow: auto; 
+  border: 1px dotted black;
 }
 
 a.block {
