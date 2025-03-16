@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Hassan Raheem Concert</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <style>
+      /* You can put any CSS styles here */
+      body {
+        margin: 0;
+      }
+
+      .img-grid {
+        --gap: 10px;
+        --num-columns: 4;
+        --row-height: 500px;
+        
+        box-sizing: border-box;
+        padding: var(--gap);
+        
+        display: grid; 
+        grid-template-columns: repeat(var(--num-columns), 1fr); 
+        grid-auto-rows: var(--row-height);
+        gap: var(--gap);
+      }
+
+      .img-grid > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .img-grid-col-2 {
+        grid-column: span 2;
+      }
+
+      .img-grid-row-2 {
+        grid-row: span 2;
+      }
+
+      @media  screen and (max-width: 1024px) {
+        .img-grid {
+          --num-cols: 2;
+          --row-height: 200px;
+        }
+      }
+
+    </style>
+  </head>
+
+  <body style="background-color:black;">
+    <!-- You can put your HTML here -->
+     <div class="img-grid">
+      <img src = "pictures-concert/PB080054.JPG" alt = "Me in front of Irving Plaza"/>
+      <img class="img-grid-col-2 img-grid-row-2" src="pictures-concert/Screenshot 2025-03-16 at 2.26.30 AM.png" alt="Hassan with guitar"/>
+      <img src = "pictures-concert/PB080070.JPG" alt = "Zuha and I"/>
+      <img src = "pictures-concert/PB080084.JPG" alt = "Me recording"/>
+      <img src = "pictures-concert/Screenshot 2025-03-16 at 2.27.14 AM.png" alt = "Hassan in red lighting"/>
+    </div>
+  </body>
+</html>
