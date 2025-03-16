@@ -19,38 +19,14 @@ head {
     font-size: 10px;
     margin: 5em auto;
   }
-
-  /* a.entrance {
-    display: inline-block;
-    max-width: 300px;
-    margin: 0.5em;
-  }
-  a.entrance img {
-    transition: all 0.25s ease;
-  }
-  a.entrance:hover img {
-    scale: 1.05;
-  } */
-
-/* .box-home {
-    max-width: 300px;
-    margin: 0.5em;
-}
-
-.box {
-    color: #fff;
-    border-radius: 5px;
-    padding: 20px;
-    font-size: 150%;
-  } */
-
+  
+  
 .blocks {
     display: grid; 
     grid-gap: 10px;
     grid-template-columns: repeat(3, 300px); 
     grid-template-rows: repeat(3, 320px);
     justify-content: center; 
-
 }
 
 .blocks > a {
