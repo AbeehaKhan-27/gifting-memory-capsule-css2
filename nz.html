@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>New Zealand</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <style>
+      /* You can put any CSS styles here */
+      body {
+        margin: 0;
+      }
+
+      .img-grid {
+        --gap: 10px;
+        --num-columns: 4;
+        --row-height: 500px;
+        
+        box-sizing: border-box;
+        padding: var(--gap);
+        
+        display: grid; 
+        grid-template-columns: repeat(var(--num-columns), 1fr); 
+        grid-auto-rows: var(--row-height);
+        gap: var(--gap);
+      }
+
+      .img-grid > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .img-grid-col-4 {
+        grid-column: span 4;
+      }
+
+      .img-grid-row-3 {
+        grid-row: span 3;
+      }
+
+      @media  screen and (max-width: 1024px) {
+        .img-grid {
+          --num-cols: 2;
+          --row-height: 200px;
+        }
+      }
+
+    </style>
+  </head>
+
+  <body style="background-color:black;">
+    <!-- You can put your HTML here -->
+     <div class="img-grid">
+      <img src = "pictures-nz/P1010039.JPG" alt = "Room in NZ"/> 
+      <img src = "pictures-nz/P1010082.JPG" alt = "Ani and Zuha hugging"/>
+      <img src = "pictures-nz/P1010086.JPG" alt = "sea"/>
+      <img src = "pictures-nz/P1010101.JPG" alt = "greedy cow"/>
+      <img src = "pictures-nz/P1010168.JPG" alt = "Me on mountain"/>
+      <img src = "pictures-nz/P1010191.JPG" alt = "sea and brown grass"/>
+      <img src = "pictures-nz/Screenshot 2025-03-16 at 12.35.11 AM.png" alt = "Sherou and I"/>
+      <img src = "pictures-nz/Screenshot 2025-03-16 at 12.36.05 AM.png" alt = "Sherou and I eating ice cream"/>
+      <img src = "pictures-nz/Screenshot 2025-03-16 at 12.37.29 AM.png" alt = "Me in front of sea"/>
+      <img src = "pictures-nz/Screenshot 2025-03-16 at 12.38.37 AM.png" alt = "Me taking picture of greedy cow"/>
+      <img src = "pictures-nz/Screenshot 2025-03-16 at 12.39.41 AM.png" alt = "Frog rock"/>
+      <img src = "pictures-nz/P1010111.JPG" alt = "Sea with mountains"/>
+    </div>
+  </body>
+</html>
